@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> {{{title}}} | RepoMgr</title>
+        <link rel="stylesheet" href="../../bootstrap-4.4.1-dist/css/bootstrap.min.css" >
+        <script src="../../bootstrap-4.4.1-dist/js/bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <b>[Note: this site has no security, please don't play with it :) ]</b>
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">RepoMgr</a>
+            <ul class="navbar-nav">
+                {{#each menuData}}
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{@key}}">{{this}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </nav>
+        
+        {{{body}}}
+    </body>
+</html>

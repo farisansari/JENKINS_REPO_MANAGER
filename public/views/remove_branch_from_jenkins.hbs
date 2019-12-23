@@ -1,0 +1,28 @@
+
+<div class="p-4 row">
+    <h3>{{{title}}}</h3>
+</div>
+
+<div class="p-4 row">
+    <div class="col-6">
+        <form method="POST" action="/manage/removeBranchFromJenkins">
+            <div class="form-group row">
+                <div class="col-3">
+                    <label for="repoName">Repo Name:</label>
+                </div>
+                <div class="col-9">
+                    <input type="text" class="form-control" placeholder="E.g. NRSP" name="repoName">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-3">
+                    <label for="branchName">Branch Name:</label>
+                </div>
+                <div class="col-9">
+                    <input type="text" class="form-control" placeholder="E.g. BR_NRSP_1234" name="branchName">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
